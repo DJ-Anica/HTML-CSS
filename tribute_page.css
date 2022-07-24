@@ -1,0 +1,194 @@
+body {
+    font-family: sans-serif, 'Roboto',
+      'Helvetica Neue', Arial;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-align: center;
+    color: #333;
+    margin: 0;
+  }
+  
+  #main {
+    margin: 10px 10px;
+    padding: 5px;
+    background: #eee;
+  }
+  
+  #header {
+    display: block;
+    height: 275px;
+  }
+  
+  h1 {
+    font-size: 7.5rem;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+
+  h3  {
+    font-size: 2.5rem;
+    min-width: 100px;
+    font-weight: 500;
+    margin: 25px;
+  }
+  
+  .rouge-quote {
+    font-size: 1rem;
+    font-style: oblique;
+    margin: 9px;
+    line-height: .8;
+  }
+  
+  img {
+    width: 30%;
+    max-width: 50%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  #img-caption {
+    margin: 15px 0 5px 0;
+    font-size: .75rem;
+    font-weight: bold;
+  }
+
+  .bio {
+    font-family: Georgia, serif;
+    line-height: 1.25;
+  }
+  
+  .bio, ul {
+    font-size: 1rem;
+    padding: 5px
+  }
+  
+  ul {
+    max-width: 700px;
+    margin: 0 auto auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  li {
+    margin: 16px 0;
+  }
+  
+  blockquote {
+    line-height: 0.5;
+    display: block;
+    height: auto;
+    text-align: center;
+    background: white;
+    padding: 5px 10px 20px 10px;
+  }
+  
+  blockquote > p {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    font-style: none;
+  }
+  
+  blockquote > cite {
+    font-size: 1.2rem;
+    font-weight: 50;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  a:visited {
+    color: #74638f;
+  }
+  
+  .h3-foot {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    color: #333;
+    margin-top: 20;
+  }
+  
+  
+  
+  
+  
+    /*  MEDIA SCREEN   */
+  
+  @media screen and (max-width: 500px) {
+    h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 15px;
+  }
+
+  #header {
+    display: block;
+    height: auto;
+  }
+
+  .rouge-quote {
+    font-size: .75rem;
+    font-style: oblique;
+    margin: 9px;
+    line-height: .8;
+  }
+
+  img {
+    width: 40%;
+    max-width: 50%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  li {
+    margin: 0px;
+    width: 290px;
+    text-align: inherit;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+    blockquote {
+        line-height: 0.75;
+        height: auto;
+        width: auto;
+        text-align: center;
+        background: white;
+        padding: 10px;
+        margin: 0px;
+        display: block;
+    }
+  
+  blockquote > p {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  blockquote > cite {
+    font-size: .9rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .h3-foot {
+    margin-top: 25;
+  }
+  }
+  
