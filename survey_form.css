@@ -102,13 +102,19 @@ button {
     /*  Mobile Viewport  */
 
   @media screen and (max-width: 500px) {
-    body {
-      width: 100%;
-      max-width: 650px;
+    .form-group {
+      padding: 5px;
+      margin: 5px;
+    }
+    
+    
+  body {
+      width: 90vw;
+      max-width:420px;
       height: 100vh;
       margin: 0 auto;
       background-color: #1a1b3a;
-    
+      min-width: 300px;
       background-image: linear-gradient(
           115deg,
           rgba(58, 58, 158, 0.8),
@@ -120,31 +126,31 @@ button {
       background-position: center;
       color: #f5f6f9;
       font-family: Verdana;
-      font-size: 25px;
+      font-size: 15px;
     }
-
-    fieldset {
-      padding: 2rem 2rem;
+    /*
+    
+  form {
+      width: 80vw;
+      max-width: 500px;
+      min-width: 300px;
+      margin: 0 auto;
+      padding: 1em;
+      vertical-align: middle;
+    }
+    
+  fieldset {
+      padding: 1rem 0;
       vertical-align: middle;
       display: inline-block;
-      margin: 0 auto;
+      margin-top: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
       background: #1a1b3a;
       opacity: 0.9;
-      height: 82%;
-      width: 100%;
-    }
-
-    .form-group {
-      width: 85%;
-    }
-
-    #notes-textarea {
-      max-width: 550px;
-    }
-
-    button {
-      width: 30%;
-      margin: 0.1em auto;
-      height: 2em;
+      height: 90vh;
+      width: 50vw;
     }
   }
+
+*/
