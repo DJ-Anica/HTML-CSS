@@ -1,131 +1,130 @@
+body {
+  width: 100%;
+  max-width: 550px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #1a1b3a;
+
+  background-image: linear-gradient(115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)),
+    url(https://www.poweradmin.com/blog/wp-content/uploads/2020/10/1-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #f5f6f9;
+  font-family: Verdana;
+  font-size: 15px;
+}
+
 .title {
   text-align: center;
   font-size: 46px;
   margin-bottom: 10px;
-  }
-  
+}
+
 .description {
-    text-align: center;
-    font-style: italic;
-    font-weight: 300;
-    color: 1px 1px 1px rgba(0, 0, 0, 0.4);
-  }
-  
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  color: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
 .form-group {
-    padding: .4em;
-    margin: 5px auto;
-  }
-  
-  
-body {
-    width: 100%;
-    max-width:550px;
-    height: 100vh;
-    margin: 0 auto;
-    background-color: #1a1b3a;
-  
-    background-image: linear-gradient(
-        115deg,
-        rgba(58, 58, 158, 0.8),
-        rgba(136, 136, 206, 0.7)
-      ),
-      url(https://www.poweradmin.com/blog/wp-content/uploads/2020/10/1-1.jpg);
-    background-size:cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: #f5f6f9;
-    font-family: Verdana;
-    font-size: 15px;
-  }
-  
+  padding: .4em;
+  margin: 5px 10px;
+}
+
 form {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding: 1em;
-    vertical-align: middle;
-  }
-  
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 1em;
+  vertical-align: middle;
+}
+
 fieldset {
-    padding: 1rem 0;
-    vertical-align: middle;
-    display: inline-block;
-    margin: 0 auto;
-    background: #1a1b3a;
-    opacity: 0.9;
-  }
-  
-  
+  padding: 1rem 0;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 auto;
+  background: #1a1b3a;
+  opacity: 0.9;
+}
+
+
 .inline {
-    width: unset;
-    margin: 0 auto;
-    vertical-align: middle;
-  }
-  
+  width: unset;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
 input[type="checkbox"] {
-    width: unset;
-    margin: 0 auto;
-  }
-  
+  width: unset;
+  margin-left: 10px;
+}
+
+input[type="radio"] {
+  width: unset;
+  margin-left: 10px;
+}
+
 label {
-    display: block;
-    margin: 0 auto;
-  }
-  
-input, textarea, select {
-    margin: 10px 0 0 0;
-      width: 100%;
-    min-height: 2em;
-  }
-  
-input, textarea {
-    background-color: #ffffff;
-    border: 1px solid #0a0a20;
-    color: black;
-  }
-  
-  
+  display: block;
+  margin: 0 auto;
+}
+
+input,
+textarea,
+select {
+  margin: 10px auto 10px auto;
+  width: 100%;
+  min-height: 2em;
+}
+
+input,
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #0a0a20;
+  color: black;
+  margin: 10px 0 0 0;
+}
+
+#notes textarea {
+  display: flex;
+  justify-content: center;
+  margin: 5px auto 0 auto;
+  width: 90%;
+}
+
+
 button {
-    display: block;
-    color: white;
-    width: 30%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #3b3b4f;
-    border-color: white;
-    min-width: 150px;
-  }
+  display: block;
+  color: white;
+  width: 30%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 150px;
+}
 
 
-    /*  Mobile Viewport  */
+/*  Mobile Viewport  */
 
-  @media screen and (max-width: 500px) {
-    .form-group {
-      padding: 5px;
-      margin: 5px;
-    }
-    
-    
+@media screen and (max-width: 600px) {
   body {
-      width: 90vw;
-      max-width:420px;
-      height: 100vh;
-      margin: 0 auto;
-      background-color: #1a1b3a;
-      min-width: 300px;
-      background-image: linear-gradient(
-          115deg,
-          rgba(58, 58, 158, 0.8),
-          rgba(136, 136, 206, 0.7)
-        ),
-        url(https://www.poweradmin.com/blog/wp-content/uploads/2020/10/1-1.jpg);
-      background-size:cover;
-      background-attachment: fixed;
-      background-position: center;
-      color: #f5f6f9;
-      font-family: Verdana;
-      font-size: 15px;
-    }
+    width: 100%;
+    max-width: 85vw;
   }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    width: 100%;
+    max-width: 90vw;
+    margin: 0 5px;
+  }
+}
