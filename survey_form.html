@@ -1,122 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project Survey Form</title>
-    <link rel="stylesheet" href="survey_form.css">
-  </head>
+<html>
 
-  <h1 id="title" class="title">Project Survey Form
-  </h1>
-  <p id="description" class="description">This is a mock survey form demonstrating my HTML/CSS abilities
-  </p>
+<head>
+  <link rel="stylesheet" href="survey_form.css" />
+</head>
+
+<h1 id="title" class="title">Project: Survey Form
+</h1>
+<p id="description" class="description">This is a mock survey form demonstrating my HTML/CSS abilities
+</p>
 
 
-  <body>
+<body>
 
-    <fieldset>
-      <div class="form-group">
-    	<form id="survey-form" action="_blank">
-        	<label for="name" id="name-label">Name </label>
-  			<input required
-            type="text" id="name" name="name"
-            placeholder="Enter name here"><br><br>
+  <fieldset>
+    <div class="form-group">
+      <form id="survey-form" action="_blank">
+        <label for="name" id="name-label">Name </label>
+        <input required type="text" id="name" name="name" placeholder="Enter first and last name here"><br><br>
 
-  			<label for="email" id="email-label">Email address </label>
-  			<input required
-            type="email" id="email" name="email" placeholder="Enter email here"><br><br>
+        <label for="email" id="email-label">Email address </label>
+        <input required type="email" id="email" name="email" placeholder="Enter e-mail address here"><br><br>
 
-  			<label for="age" id="number-label" name="age">Age </label>
-  			<input required
-            type="number" id="number" name="age" min="16" max="120"
-            placeholder="16-120"><br><br>
-        </form>
-        </div>
+        <label for="age" id="number-label" name="age">Age </label>
+        <input required type="number" id="number" name="age" min="16" max="120" placeholder="16-120"><br><br>
+      </form>
+    </div>
 
-      <div class="form-group">
-      <label id="survey-form">What was your favorite feature of freeCodeCamp?<br>
-      <select name="reason" id="dropdown" id="survey-form">
-            <option disabled selected value>(select one)</option>
-            <option value="Free">Free to use</option>
-            <option value="Projects">Hands-on projects</option>
-            <option value="Portfolio">Portfolio builder</option>
-            <option value="Forum">freeCodeCamp Forum</option>
-          </select>
-          </label>
-          </div>
+    <div class="form-group">
+      <label id="survey-form">Which of these choices best reflects why you began programming?<br>
+        <select name="reason" id="dropdown" id="survey-form">
+          <option disabled selected value>(select one)</option>
+          <option value="majors">I'm exploring majors</option>
+          <option value="remote">I want a remote tech job</option>
+          <option value="FAANG/MAANG">I want to work at a FAANG/MAANG company</option>
+          <option value="income">I want a higher income</option>
+        </select>
+      </label>
+    </div>
 
-          <div class="form-group">
-          <p>What is your current status?
-          </p>
-        <label id="survey-form" class="status">
-          <input type="radio" name="status-type" class="inline" value="student">Student
-          </label>
-        <label id="survey-form">
-          <input type="radio" name="status-type" class="inline" value="entry-level-developer" />Entry-level developer
-          </label>
-        <label id="survey-form">
-          <input type="radio" name="status-type" class="inline" value="senior developer"/>Senior Developer
-          </label>
-        <label id="survey-form">
-          <input type="radio" name="status-type" class="inline" value="self-taught programmer"/>Self-taught programmer
-          </label>
-        </label>
-        </div>
+    <div class="form-group">
+      <p>Are you a student?
+      </p>
+      <label id="survey-form">
+        <input type="radio" name="status-type" class="inline" value="student-yes">Yes
+      </label>
+      <label id="survey-form">
+        <input type="radio" name="status-type" class="inline" value="student-no" />No
+      </label>
+    </div>
 
-        <div class="form-group">
-        <p>
-            Which language(s) are most important to you?
-            <span class="clue">(Check all that apply)</span>
-          </p>
+    <div class="form-group">
+      <p>What is your experience level?
+      </p>
+      <label id="survey-form">
+        <input type="radio" name="status-type" class="inline" value="none-experience">No prior experience
+      </label>
+      <label id="survey-form">
+        <input type="radio" name="status-type" class="inline" value="entry-level" />Entry-level developer
+      </label>
+      <label id="survey-form">
+        <input type="radio" name="status-type" class="inline" value="mid-level" />Mid-level Developer
+      </label>
+      <label id="survey-form">
+        <input type="radio" name="status-type" class="inline" value="senior-level" />Senior Developer
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>Are you currently working in tech?
+      </p>
+      <label id="survey-form">
+        <input type="radio" name="status-type" class="inline" value="tech-yes">Yes
+      </label>
+      <label id="survey-form">
+        <input type="radio" name="status-type" class="inline" value="tech-no" />No
+      </label>
+    </div>
+
+    
+
+    <div class="form-group">
+      <p>
+        Which language(s) are most important to you?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label for="language4" class="survey-form">
+        <input type="checkbox" id="language4" name="language4" value="C" class="inline"> C
+      </label>
+
+      <label for="language4" class="survey-form">
+        <input type="checkbox" id="language4" name="language4" value="CPP" class="inline"> C++
+      </label>
+
+      <label for="language2" class="survey-form">
+        <input type="checkbox" id="language2" name="language2" value="HTML/CSS" class="inline"> HTML/CSS
+      </label>
+
+      <label for="language6" class="survey-form">
+        <input type="checkbox" id="language6" name="language6" value="Java" class="inline"> Java
+      </label>
+
+      <label for="language6" class="survey-form">
+        <input type="checkbox" id="language6" name="language6" value="JavaScript" class="inline"> JavaScript
+      </label>
+
+      <label for="language1" class="survey-form">
+        <input type="checkbox" id="language1" name="language1" value="Python" class="inline" /> Python
+      </label>
 
 
-  			<label for="language1" id="survey-form">
-          	<input type="checkbox" id="language1" name="language1" value="Python" class="inline"/> Python</label>
+      <label for="language5" class="survey-form">
+        <input type="checkbox" id="language5" name="language5" value="Ruby" class="inline"> Ruby
+      </label>
 
 
-  			<label for="language2" id="survey-form">
-            <input type="checkbox" id="language2" name="language2" value="HTML/CSS" class="inline"> HTML/CSS</label>
+      <label for="language7" class="survey-form">
+        <input type="checkbox" id="language7" name="language7" value="Swift" class="inline"> Swift
+      </label>
+    </div>
 
 
-  			<label for="language3" id="survey-form">
-            <input type="checkbox" id="language3" name="language3" value="Javascript" class="inline"> Javascript</label>
+    <div id="notes" class="form-group">
+      <label id="notes-textarea">Provide additional notes:<br>
+        <textarea name="notes" rows="3" cols="30" placeholder="I wish you offered..."></textarea><br>
+      </label>
+    </div>
 
+    <div>
+      <label id="submit-button">
+        <button type="submit" id="submit">Submit</button>
+      </label>
+    </div>
 
-  			<label for="language4" id="survey-form">
-            <input type="checkbox" id="language4" name="language4" value="C" class="inline"> C</label>
+  </fieldset>
+  </form>
+</body>
 
-
-  			<label for="language5" id="survey-form">
-            <input type="checkbox" id="language5" name="language5" value="Ruby" class="inline"> Ruby</label>
-
-
-  			<label for="language6" id="survey-form">
-            <input type="checkbox" id="language6" name="language6" value="Java" class="inline"> Java</label>
-
-
-  			<label for="language7" id="survey-form">
-            <input type="checkbox" id="language7" name="language7" value="Swift" class="inline"> Swift</label>
-
-
-  			<label for="language8" id="survey-form">
-            <input type="checkbox" id="language8" name="language8" value="C#" class="inline"> C#</label><br>
-        </div>
-
-        <div >
-          <label id="notes-textarea">Provide additional notes:<br>
-          <textarea name="notes" rows="3" cols="30" placeholder="I wish you offered..."></textarea><br>
-			  </label>
-          </div>
-
-          <div >
-            <label id="submit-button">
-            <button type="submit" id="submit">Submit</button>
-          </label>
-        </div>
-
-          </fieldset>
-    </form>
-    </body>
-  </html>
+</html>
