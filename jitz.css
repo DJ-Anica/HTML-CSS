@@ -1,0 +1,616 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    margin: 0;
+    width: 30%; 
+}
+
+h1 a:hover {
+    text-decoration: none;
+    color: #6e6d6d;
+    font-size: 1.8em;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ddd;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin-left: 50px;
+    margin-right: 130px;
+    font-size: 1.15em;
+}
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #6e6d6d;
+    font-size: 1.75em;
+    font-weight: 900;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7em; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Index */
+
+.flexbox-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    block-size: auto;
+    border: 3px solid #333;
+    padding-bottom: 40px; 
+    margin-bottom: 30px;
+    margin-left: 195px;
+    margin-right: 195px;
+    background-color: #9e9c9c33;
+    box-shadow: 5px 10px #888888;
+}
+
+.flexbox {
+    width: 370px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.flexbox1 {
+    order: 1;
+}
+
+.flexbox2 {
+    order: 2;
+}
+
+.flexbox2 > h3 {
+    margin: 20px 0px 0px 0px;
+    font-size: 2.95em;
+    text-align: left;
+}
+
+#list-anchor {
+    font-size: 2.05em;
+    text-align: center;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+#list-anchor:hover {
+    color:#a09e9ee9;
+    box-shadow: 0 2px 4px rgbs(0, 0, 0, 0.3);
+    font-size: 2.25em;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+    min-width: 600px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+.content-table thead tr {
+    background-color: #dfdfdf;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 3px solid #dfdfdf;
+}
+
+/* Classes Page */
+
+#classes {
+    justify-content: center;
+    margin: 0px 190px 50px 190px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+    box-shadow: 5px 10px #888888;
+}
+
+.class {
+    text-shadow: 2px 2px 8px #787878;
+}
+
+#class-text {
+    margin: 20px 220px 30px 220px;
+    padding: 5px 60px 5px 60px;
+}
+
+
+/* Schedule Page */
+
+#schedule-header {
+    margin-top: 0px;
+    padding-top: 50px;
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.schedule-box {
+    width: 200px;
+    height: 350px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+    box-shadow: 5px 10px #888888;
+}
+
+.schedule-box > h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.schedule-box > p {
+    padding-left: 30px;
+}
+
+#schedule-wrapper {
+    height: 990px;
+    background-image: url("sparring.jpg");
+    background-size: cover;
+}
+
+#info {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+#mobile {    
+    display: inline;
+    color: #000;
+    font-size: 2em;
+}
+
+#mobile:hover {    
+    display: inline;
+    color: #929090;
+    font-size: 2.5em;
+}
+
+#desktop {      
+    display: none;
+    color: #000;
+}
+
+footer {
+    padding: 1em;
+    border-top: 2px solid #000;
+    background-color: #333;
+    color: #fff;
+    font-size: .9em;
+    font-style: italic;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.75em; 
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #787777;
+    font-size: 1.95em; 
+}
+
+#homebanner {     
+    height: 800px;
+    background-image: url("handfighting.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+img {
+    display: block;
+    width: 600px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("technique.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Start of FIRST Media Query */
+/* MOBILE */    
+@media screen and (max-width: 600px) {
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        width: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header>* {
+        text-align: center;
+        padding: auto;
+        flex: 1 100%;
+    }
+
+    h1 {
+        width: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        width: 80vw;
+        margin: 0 5px 0 5px;
+        padding: 10px 0 10px 0;
+
+    }
+
+    nav ul li {
+        display: block;
+        padding: 0px;
+        margin: 10px 0px 10px 0px;
+        font-size: 1.15em;
+        justify-content: center;
+        border-bottom: 2px solid #333;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none; 
+    }
+
+    /* INDEX */
+
+    #homebanner {
+        height: 300px;
+    }
+
+    .flexbox-container {
+        width: 90vw;
+        margin: 0;
+        padding: 0 9px 0 9px;
+        margin: 0 5px 0 5px;
+    }
+
+    .flexbox1 {
+        font-size: 2.25vw;
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .flexbox2 {
+        font-size: 2.05vw;
+        width: auto;
+        padding-left: 5px;
+        padding-right: 15px;
+        margin-right: 10px;
+        text-align: left;
+    }
+
+    .content-table {
+        width: 90%;
+        border-collapse: collapse;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        font-size: 0.9em;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("technique.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+
+    /* CLASSES PAGE */
+
+    #classes {
+        margin: 30px 5px 40px 5px;
+    }
+
+    #class-text {
+        margin: 20px 10px 30px;
+        padding: 5px 30px;
+    }
+
+    #classes {
+        display: block; 
+        margin-bottom: 20px; 
+    }
+
+    #classes-container {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    /* SCHEDULE PAGE */
+
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+    }
+    
+    .schedule-container {
+        display: flex;
+        flex: 1;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .schedule-box {
+        margin-bottom: 20px; 
+        width: 80%;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .schedule-box > p {
+        text-align: left;
+        margin: 15px auto;
+        max-width: 40%; 
+    }
+
+    #schedule-wrapper {
+        height: auto;
+        background-image: url("sparring.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+    }
+
+}
+
+
+/* SECOND media query */
+/* Tablet */
+
+@media screen and (min-width: 601px) and (max-width: 1150px) {
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        width: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header>* {
+        text-align: center;
+        padding: auto;
+        flex: 1 100%;
+    }
+
+    h1 {
+        width: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        width: 80vw;
+        margin: 0 5px 0 5px;
+        padding: 10px 0 10px 0;
+
+    }
+
+    nav ul li {
+        display: block;
+        padding: 0px;
+        margin: 10px 0px 10px 0px;
+        font-size: 1.15em;
+        justify-content: center;
+        border-bottom: 2px solid #333;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none; 
+    }
+
+    /* INDEX */
+
+    #homebanner {
+        height: 600px;
+    }
+
+    .flexbox-container {
+        width: 90vw;
+        margin: 0;
+        padding: 0 9px 0 9px;
+        margin: 0 5px 0 5px;
+    }
+
+    .flexbox1 {
+        font-size: 2.05vw;
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .flexbox2 {
+        font-size: 1.85vw;
+        width: auto;
+        padding-left: 5px;
+        padding-right: 15px;
+        margin-right: 10px;
+        text-align: left;
+    }
+
+    .content-table {
+        width: 80%;
+        border-collapse: collapse;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        font-size: 0.9em;
+        min-width: 200px;
+    }
+
+    img {
+        display: block;
+        width: 60%;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("technique.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+
+    /* CLASSES PAGE */
+
+    #classes {
+        margin: 30px 5px 40px 5px;
+    }
+
+    #class-text {
+        margin: 20px 10px 30px;
+        padding: 5px 30px;
+    }
+
+    #classes {
+        display: block; 
+        margin-bottom: 20px; 
+    }
+
+    #classes-container {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    /* SCHEDULE PAGE */
+
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+    }
+    
+    .schedule-container {
+        display: flex;
+        flex: 1;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .schedule-box {
+        margin-bottom: 20px; 
+        width: 80%;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .schedule-box > p {
+        text-align: left;
+        margin: 15px auto;
+        max-width: 40%;
+    }
+
+
+    #schedule-wrapper {
+        height: auto;
+        background-image: url("sparring.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+    }
+}
