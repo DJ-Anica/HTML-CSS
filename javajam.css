@@ -1,0 +1,358 @@
+* { box-sizing: border-box;}
+
+body {
+    margin: 0;
+    background-color: #D2B48C;
+    color: #231814;
+    font-family: Tahoma, Arial, sans-serif; }
+
+header {
+    height: 128px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 105px;
+    color: #8C3826; 
+    background-color: #D2B48C;
+    background-image: url("javajam/cup.jpg");
+    background-repeat: no-repeat;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #231814;
+}
+
+header a:visited {
+    color: #231814;
+}
+
+header a:hover {
+    color: #FEF6C2;
+}
+
+h1 {
+    font-size: 2em;}
+
+h2 {
+    color: #8C3826;
+}
+
+h3 {
+    color: #8C3826;
+}
+
+h4 {
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: #231814;
+    clear: left;
+
+}
+
+dt {
+    color: #8C3826;
+}
+
+nav {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {color: #FEF6C2;}
+
+nav a:visited {color: #D2B48C;}
+
+nav a:hover {color: #CC9933;}
+
+nav ul {
+    display: flex; 
+    flex-direction: column; 
+    margin: 0; 
+    padding: 0; 
+    font-size: 1.25em;
+}
+
+nav li {
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-bottom: solid 1px;
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main {
+    background-color: #FEF6C2;
+    font-size: 1.5em;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 5px;
+    padding-right: 0;
+    display: block;
+}
+
+main h2 {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main h3 {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main h4 {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main div {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main ul {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+main dl {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+footer {
+    padding: 1em;
+    border-top: 2px solid #8C3826;
+    background-color: #D2B48C;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center; }
+
+#wrapper {      /* # = ID */
+    background-color: #231814;
+    padding: 0;
+}
+
+.details {      /* . = Class */
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}
+
+#homehero {     /* # = ID */
+    height: 300px;
+    background-image: url("javajam/road.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+#heromugs {     
+    height: 300px;
+    background-image: url("javajam/threemugs.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#heroguitar {    
+    height: 300px;
+    background-image: url("javajam/guitar.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#mobile {    
+    display: inline;
+}
+
+#desktop {      
+    display: none;
+}
+
+table {
+    width: 90%; 
+    margin: 0 auto; 
+    border-spacing: 0; 
+}
+
+td, th {
+    padding: 10px;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #D2B48E; 
+}
+
+#herojobs {
+    height: 300px;
+    background-image: url("javajam/coffeecup.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+}
+
+input, textarea {
+    margin-bottom: .5em;
+}
+
+.item {
+    background-color: #FAF9F7;
+    margin: 1em;
+    padding: 1em;
+    overflow: auto;
+}
+  
+.item img {
+    float: right;
+}
+  
+#herocouch {
+    height: 300px;
+    background-image: url("javajam/herocouch.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* Start of FIRST Media Query */
+@media screen and (min-width: 600px){
+    header {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    #homehero {     /* # = ID */
+        height: 50vh;
+        background-image: url("javajam/hero.jpg");
+    }
+    
+    
+    #heromugs {     /* # = ID */
+        background-image: url("javajam/heromugs.jpg");
+    }
+    
+    #heroguitar {       /* # = ID */
+        background-image: url("javajam/heroguitar.jpg");
+    }
+
+    #flow {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+    }
+
+    h4 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    form {
+        width: 40%;
+        display: grid;
+        grid-template-columns: 6em 1fr;
+        grid-gap: 1em;
+    }
+
+    input[type="submit"] {
+        grid-column: 2;
+        width: 9em;
+    }
+
+    #herojobs {
+        background-image: url("javajam/herojobs.jpg");
+    }
+
+    /* End of FIRST Media Query */
+}
+
+/* Start of SECOND Media Query */
+@media screen and (min-width: 1024px){
+    @supports (display: grid) {
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    }
+
+    #wrapper {
+        display: grid;
+        grid-template:
+            "header header"
+            "nav    main"
+            "footer footer"
+            / 200px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    header {
+        background-image: url("javajam/coffeelogo.jpg");
+    }
+}
