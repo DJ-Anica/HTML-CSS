@@ -125,7 +125,7 @@ h2 {
     margin-right: auto;
     margin-bottom: 30px;
     font-size: 0.9em;
-    min-width: 600px;
+    width: 600px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
@@ -280,6 +280,7 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 560px;
 }
 
 
@@ -366,24 +367,29 @@ iframe {
     }
 
     .content-table {
-        width: 90%;
+        width: 95%;
         border-collapse: collapse;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
+        margin: 50px auto 30px auto;
         font-size: 0.9em;
     }
 
     img {
         display: block;
-        width: 100%;
+        width: 95%;
         height: auto;
         margin-left: auto;
         margin-right: auto;
         background-image: url("technique.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
+    }
+
+
+    iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
     }
 
 
