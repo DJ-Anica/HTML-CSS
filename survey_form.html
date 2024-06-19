@@ -1,141 +1,112 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="survey_form.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey_form.css">
+    <title>Project: Survey Form</title>
 </head>
-
-<h1 id="title" class="title">Project: Survey Form
-</h1>
-<p id="description" class="description">This is a mock survey form demonstrating my HTML/CSS abilities
-</p>
-
-
 <body>
-
-  <fieldset>
-    <div class="form-group">
-      <form id="survey-form" action="_blank">
-        <label for="name" id="name-label">Name </label>
-        <input required type="text" id="name" name="name" placeholder="Enter first and last name here"><br><br>
-
-        <label for="email" id="email-label">Email address </label>
-        <input required type="email" id="email" name="email" placeholder="Enter e-mail address here"><br><br>
-
-        <label for="age" id="number-label" name="age">Age </label>
-        <input required type="number" id="number" name="age" min="16" max="120" placeholder="16-120"><br><br>
-      </form>
-    </div>
-
-    <div class="form-group">
-      <label id="survey-form">Which of these choices best reflects why you began programming?<br>
-        <select name="reason" id="dropdown" id="survey-form">
-          <option disabled selected value>(select one)</option>
-          <option value="majors">I'm exploring majors</option>
-          <option value="remote">I want a remote tech job</option>
-          <option value="FAANG/MAANG">I want to work at a FAANG/MAANG company</option>
-          <option value="income">I want a higher income</option>
-        </select>
-      </label>
-    </div>
-
-    <div class="form-group">
-      <p>Are you a student?
-      </p>
-      <label id="survey-form">
-        <input type="radio" name="status-type" class="inline" value="student-yes">Yes
-      </label>
-      <label id="survey-form">
-        <input type="radio" name="status-type" class="inline" value="student-no" />No
-      </label>
-    </div>
-
-    <div class="form-group">
-      <p>What is your experience level?
-      </p>
-      <label id="survey-form">
-        <input type="radio" name="status-type" class="inline" value="none-experience">No prior experience
-      </label>
-      <label id="survey-form">
-        <input type="radio" name="status-type" class="inline" value="entry-level" />Entry-level developer
-      </label>
-      <label id="survey-form">
-        <input type="radio" name="status-type" class="inline" value="mid-level" />Mid-level Developer
-      </label>
-      <label id="survey-form">
-        <input type="radio" name="status-type" class="inline" value="senior-level" />Senior Developer
-      </label>
-    </div>
-
-    <div class="form-group">
-      <p>Are you currently working in tech?
-      </p>
-      <label id="survey-form">
-        <input type="radio" name="status-type" class="inline" value="tech-yes">Yes
-      </label>
-      <label id="survey-form">
-        <input type="radio" name="status-type" class="inline" value="tech-no" />No
-      </label>
-    </div>
-
+    <h1 id="title" class="title">Project: Survey Form</h1>
+    <p id="description" class="description">This is a demo survey form demonstrating my HTML/CSS abilities</p>
     
+    <form id="survey-form" action="_blank">
+        <fieldset>
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input required type="text" id="name" name="name" placeholder="Enter first and last name here"><br><br>
 
-    <div class="form-group">
-      <p>
-        Which language(s) are most important to you?
-        <span class="clue">(Check all that apply)</span>
-      </p>
+                <label for="email" id="email-label">Email address</label>
+                <input required type="email" id="email" name="email" placeholder="Enter e-mail address here"><br><br>
 
-      <label for="language4" class="survey-form">
-        <input type="checkbox" id="language4" name="language4" value="C" class="inline"> C
-      </label>
+                <label for="age" id="number-label">Age</label>
+                <input required type="number" id="age" name="age" min="16" max="120" placeholder="16-120"><br><br>
+            </div>
 
-      <label for="language4" class="survey-form">
-        <input type="checkbox" id="language4" name="language4" value="CPP" class="inline"> C++
-      </label>
+            <div class="form-group">
+                <label for="dropdown">Which of these choices best relates to you?</label><br>
+                <select name="reason" id="dropdown">
+                    <option disabled selected value>(select one)</option>
+                    <option value="majors">I'm exploring majors</option>
+                    <option value="career">I want to switch careers</option>
+                    <option value="remote">I want a remote tech job</option>
+                    <option value="website">I want to build my own website</option>
+                </select>
+            </div>
 
-      <label for="language2" class="survey-form">
-        <input type="checkbox" id="language2" name="language2" value="HTML/CSS" class="inline"> HTML/CSS
-      </label>
+            <div class="form-group">
+                <p>Are you a student?</p>
+                <label>
+                    <input type="radio" name="student-status" class="inline" value="student-yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="student-status" class="inline" value="student-no"> No
+                </label>
+            </div>
 
-      <label for="language6" class="survey-form">
-        <input type="checkbox" id="language6" name="language6" value="Java" class="inline"> Java
-      </label>
+            <div class="form-group">
+                <p>What is your experience level?</p>
+                <label>
+                    <input type="radio" name="experience-level" class="inline" value="none-experience"> No prior experience
+                </label>
+                <label>
+                    <input type="radio" name="experience-level" class="inline" value="entry-level"> Entry-level developer
+                </label>
+                <label>
+                    <input type="radio" name="experience-level" class="inline" value="mid-level"> Mid-level Developer
+                </label>
+                <label>
+                    <input type="radio" name="experience-level" class="inline" value="senior-level"> Senior Developer
+                </label>
+            </div>
 
-      <label for="language6" class="survey-form">
-        <input type="checkbox" id="language6" name="language6" value="JavaScript" class="inline"> JavaScript
-      </label>
+            <div class="form-group">
+                <p>Are you currently working in tech?</p>
+                <label>
+                    <input type="radio" name="tech-status" class="inline" value="tech-yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="tech-status" class="inline" value="tech-no"> No
+                </label>
+            </div>
 
-      <label for="language1" class="survey-form">
-        <input type="checkbox" id="language1" name="language1" value="Python" class="inline" /> Python
-      </label>
+            <div class="form-group">
+                <p>Which language(s) are most important to you? <span class="clue">(Check all that apply)</span></p>
+                <label for="language-c">
+                    <input type="checkbox" id="language-c" name="language" value="C" class="inline"> C
+                </label>
+                <label for="language-cpp">
+                    <input type="checkbox" id="language-cpp" name="language" value="CPP" class="inline"> C++
+                </label>
+                <label for="language-htmlcss">
+                    <input type="checkbox" id="language-htmlcss" name="language" value="HTML/CSS" class="inline"> HTML/CSS
+                </label>
+                <label for="language-java">
+                    <input type="checkbox" id="language-java" name="language" value="Java" class="inline"> Java
+                </label>
+                <label for="language-javascript">
+                    <input type="checkbox" id="language-javascript" name="language" value="JavaScript" class="inline"> JavaScript
+                </label>
+                <label for="language-python">
+                    <input type="checkbox" id="language-python" name="language" value="Python" class="inline"> Python
+                </label>
+                <label for="language-ruby">
+                    <input type="checkbox" id="language-ruby" name="language" value="Ruby" class="inline"> Ruby
+                </label>
+                <label for="language-swift">
+                    <input type="checkbox" id="language-swift" name="language" value="Swift" class="inline"> Swift
+                </label>
+            </div>
 
+            <div id="notes" class="form-group">
+                <label for="notes-textarea">Provide additional notes:</label><br>
+                <textarea id="notes-textarea" name="notes" rows="3" cols="30" placeholder="I wish you offered..."></textarea><br>
+            </div>
 
-      <label for="language5" class="survey-form">
-        <input type="checkbox" id="language5" name="language5" value="Ruby" class="inline"> Ruby
-      </label>
-
-
-      <label for="language7" class="survey-form">
-        <input type="checkbox" id="language7" name="language7" value="Swift" class="inline"> Swift
-      </label>
-    </div>
-
-
-    <div id="notes" class="form-group">
-      <label id="notes-textarea">Provide additional notes:<br>
-        <textarea name="notes" rows="3" cols="30" placeholder="I wish you offered..."></textarea><br>
-      </label>
-    </div>
-
-    <div>
-      <label id="submit-button">
-        <button type="submit" id="submit">Submit</button>
-      </label>
-    </div>
-
-  </fieldset>
-  </form>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
 </body>
-
 </html>
