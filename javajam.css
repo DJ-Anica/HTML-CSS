@@ -13,7 +13,7 @@ header {
     padding-left: 105px;
     color: #8C3826; 
     background-color: #D2B48C;
-    background-image: url("javajam/cup.jpg");
+    background-image: url("cup.jpg");
     background-repeat: no-repeat;
 }
 
@@ -162,7 +162,7 @@ footer {
 
 #homehero {     /* # = ID */
     height: 300px;
-    background-image: url("javajam/road.jpg");
+    background-image: url("road.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -170,14 +170,14 @@ footer {
 
 #heromugs {     
     height: 300px;
-    background-image: url("javajam/threemugs.jpg");
+    background-image: url("threemugs.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 #heroguitar {    
     height: 300px;
-    background-image: url("javajam/guitar.jpg");
+    background-image: url("guitar.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -206,7 +206,7 @@ tr:nth-of-type(odd) {
 
 #herojobs {
     height: 300px;
-    background-image: url("javajam/coffeecup.jpg");
+    background-image: url("coffeecup.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -235,7 +235,7 @@ input, textarea {
   
 #herocouch {
     height: 300px;
-    background-image: url("javajam/herocouch.jpg");
+    background-image: url("herocouch.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -265,16 +265,16 @@ input, textarea {
 
     #homehero {     /* # = ID */
         height: 50vh;
-        background-image: url("javajam/hero.jpg");
+        background-image: url("hero.jpg");
     }
     
     
     #heromugs {     /* # = ID */
-        background-image: url("javajam/heromugs.jpg");
+        background-image: url("heromugs.jpg");
     }
     
     #heroguitar {       /* # = ID */
-        background-image: url("javajam/heroguitar.jpg");
+        background-image: url("heroguitar.jpg");
     }
 
     #flow {
@@ -313,7 +313,7 @@ input, textarea {
     }
 
     #herojobs {
-        background-image: url("javajam/herojobs.jpg");
+        background-image: url("herojobs.jpg");
     }
 
     /* End of FIRST Media Query */
@@ -353,6 +353,6 @@ input, textarea {
     }
 
     header {
-        background-image: url("javajam/coffeelogo.jpg");
+        background-image: url("coffeelogo.jpg");
     }
 }
