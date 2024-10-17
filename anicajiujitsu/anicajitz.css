@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    width: fit-content;
 }
 
 header {
@@ -294,6 +293,11 @@ iframe {
 /* Start of FIRST Media Query */
 /* MOBILE */    
 @media screen and (max-width: 600px) {
+
+    body {
+    margin: 0;
+    width: fit-content;
+}
 
     #mobile {
         display: none;
