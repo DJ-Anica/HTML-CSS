@@ -294,11 +294,6 @@ iframe {
 /* MOBILE */    
 @media screen and (max-width: 600px) {
 
-    body {
-    margin: 0;
-    width: fit-content;
-}
-
     #mobile {
         display: none;
     }
