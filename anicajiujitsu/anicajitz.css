@@ -27,7 +27,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background-color: #ddd;
 }
 
@@ -45,20 +45,28 @@ nav ul li {
 nav ul li a {
     color: #333;
     text-decoration: none;
+    font-size: 1.5em;
 }
+
 
 nav ul li a:hover {
     text-decoration: none;
     color: #6e6d6d;
-    font-size: 1.75em;
     font-weight: 900;
+    transform: scale(1.45); /* Slightly increases the size */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 
-a {
+
+header h1 a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.7em; 
+    font-size: 3.95vw; 
+}
+
+header h1 a:hover {
+    font-size: 4vw;
 }
 
 h2 {
@@ -296,6 +304,10 @@ iframe {
 /* MOBILE */    
 @media screen and (max-width: 600px) {
 
+    header h1 a {
+        font-size: 14vw;
+    }
+
     #mobile {
         display: none;
     }
@@ -353,8 +365,8 @@ iframe {
     }
 
     h2 {
-        font-size: 7vw;
-        margin: 10px 5px;
+        font-size: 8vw;
+        margin: 20px 5px;
     }
 
     .flexbox-container {
@@ -427,7 +439,7 @@ iframe {
 
     .class {
         text-align: center;
-        font-size: 7vw;
+        font-size: 8.75vw;
     }
 
     /* SCHEDULE PAGE */
@@ -464,8 +476,9 @@ iframe {
     .schedule-box > p {
         text-align: left;
         margin: 15px auto;
-        max-width: 40%; 
+        max-width: 55%; 
         font-size: 5vw;
+        padding: 0;
     }
 
     .schedule-box > p:last-of-type {
