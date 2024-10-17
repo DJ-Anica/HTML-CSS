@@ -297,8 +297,11 @@ iframe {
 }
 
 
+
+
 /* Start of FIRST Media Query */
 /* MOBILE */    
+
 @media screen and (max-width: 600px) {
 
     #mobile {
@@ -344,15 +347,19 @@ iframe {
 
     nav ul li {
         display: block;
-        padding: 0px;
-        margin: 10px 0px 10px 0px;
+        margin: 15px 0px 5px 0px;
         font-size: 1.15em;
         justify-content: center;
-        border-bottom: 2px solid #333;
+        border-bottom: 1px solid #000 ;
+        padding: 0px 0px 15px 0px;
     }
 
-    nav ul li:last-child {
-        border-bottom: none; 
+    nav ul li:last-of-type {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 0;
     }
 
     /* INDEX */
