@@ -171,6 +171,8 @@ h3 {
 
 .class {
     text-shadow: 2px 2px 8px #787878;
+    text-align: center;
+    font-size: 2.5vw;
 }
 
 #class-text {
@@ -408,10 +410,6 @@ iframe {
 
     /* CLASSES PAGE */
 
-    #classes {
-        margin: 0 5px;
-    }
-
     #class-text {
         margin: 20px 10px 30px;
         padding: 5px 30px;
@@ -419,7 +417,7 @@ iframe {
 
     #classes {
         display: block; 
-        margin-bottom: 20px; 
+        margin: 0 5px 50px; 
     }
 
     #classes-container {
@@ -427,9 +425,9 @@ iframe {
         flex-direction: column; 
     }
 
-    h3 {
+    .class {
         text-align: center;
-        font-size: 9vw;
+        font-size: 7vw;
     }
 
     /* SCHEDULE PAGE */
@@ -486,8 +484,11 @@ iframe {
 }
 
 
+
+
 /* SECOND media query */
 /* Tablet */
+
 
 @media screen and (min-width: 601px) and (max-width: 1150px) {
     #mobile {
